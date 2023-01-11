@@ -9,19 +9,19 @@ function Interface(props) {
     return (
         <div className="App">
             {/* title with a count badge span - and three buttons */}
-
+            <h1>Counter</h1>
             <h1>
                 Current State's Count is:
                 <span className="badge">{count}</span>
             </h1>
 
             <div className="Buttons">
-                <button onClick={() => dispatch(Actions.Increment)}>Increment</button>
-                <button onClick={() => dispatch(Actions.Decrement)}>Decrement</button>
-                <button onClick={() => dispatch(Actions.Reset)}>Reset</button>
+                <button onClick={() => dispatch(Actions.Increment())}>Increment</button>
+                <button onClick={() => dispatch(Actions.Decrement())}>Decrement</button>
+                <button onClick={() => dispatch(Actions.Reset())}>Reset</button>
             </div>
         </div>
     )
 }
 
-export default App;
+export default Interface;
