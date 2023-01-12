@@ -1,0 +1,203 @@
+{
+    "initialState": [],
+    "ContinentsList": [{
+            "id": 1,
+            "name": "Africa"
+        },
+        {
+            "id": 2,
+            "name": "Antarctica"
+        },
+        {
+            "id": 3,
+            "name": "Asia"
+        },
+        {
+            "id": 4,
+            "name": "Europe"
+        },
+        {
+            "id": 5,
+            "name": "North America"
+        },
+        {
+            "id": 6,
+            "name": "Oceania"
+        },
+        {
+            "id": 7,
+            "name": "South America"
+        }
+    ],
+    "CountryPerIndependanceYear": [{
+            "id": 1,
+            "name": "Afghanistan",
+            "independenceYear": 1919
+        },
+        {
+            "id": 2,
+            "name": "Albania",
+            "independenceYear": 1912
+        },
+        {
+            "id": 3,
+            "name": "Algeria",
+            "independenceYear": 1962
+        },
+        {
+            "id": 4,
+            "name": "Andorra",
+            "independenceYear": 1278
+        },
+        {
+            "id": 5,
+            "name": "Angola",
+            "independenceYear": 1975
+        },
+        {
+            "id": 6,
+            "name": "Antigua and Barbuda",
+            "independenceYear": 1981
+        },
+        {
+            "id": 7,
+            "name": "Argentina",
+            "independenceYear": 1816
+        },
+        {
+            "id": 8,
+            "name": "Armenia",
+            "independenceYear": 1991
+        },
+        {
+            "id": 9,
+            "name": "Australia",
+            "independenceYear": 1901
+        },
+        {
+            "id": 10,
+            "name": "Austria",
+            "independenceYear": 1918
+        },
+        {
+            "id": 11,
+            "name": "Azerbaijan",
+            "independenceYear": 1991
+        },
+        {
+            "id": 12,
+            "name": "Bahamas",
+            "independenceYear": 1973
+        },
+        {
+            "id": 13,
+            "name": "Bahrain",
+            "independenceYear": 1971
+        },
+        {
+            "id": 14,
+            "name": "Bangladesh",
+            "independenceYear": 1971
+        },
+        {
+            "id": 15,
+            "name": "Barbados",
+            "independenceYear": 1966
+        },
+        {
+            "id": 16,
+            "name": "Belarus",
+            "independenceYear": 1991
+        },
+        {
+            "id": 17,
+            "name": "Belgium",
+            "independenceYear": 1830
+        },
+        {
+            "id": 18,
+            "name": "Belize",
+            "independenceYear": 1981
+        },
+        {
+            "id": 19,
+            "name": "Benin",
+            "independenceYear": 1960
+        },
+        {
+            "id": 20,
+            "name": "Bhutan",
+            "independenceYear": 1949
+        },
+        {
+            "id": 21,
+            "name": "Bolivia",
+            "independenceYear": 1825
+        },
+        {
+            "id": 22,
+            "name": "Bosnia and Herzegovina",
+            "independenceYear": 1992
+        },
+        {
+            "id": 23,
+            "name": "Botswana",
+            "independenceYear": 1966
+        },
+        {
+            "id": 24,
+            "name": "Brazil",
+            "independenceYear": 1822
+        },
+        {
+            "id": 25,
+            "name": "Brunei",
+            "independenceYear": 1984
+        },
+        {
+            "id": 26,
+            "name": "Bulgaria",
+            "independenceYear": 1908
+        },
+        {
+            "id": 27,
+            "name": "Burkina Faso",
+            "independenceYear": 1960
+        },
+        {
+            "id": 28,
+            "name": "Burundi",
+            "independenceYear": 1962
+        },
+        {
+            "id": 29,
+            "name": "Cambodia",
+            "independenceYear": 1953
+        },
+        {
+            "id": 30,
+            "name": "Cameroon",
+            "independenceYear": 1960
+        },
+        {
+            "id": 31,
+            "name": "Canada",
+            "independenceYear": 1867
+        },
+        {
+            "id": 32,
+            "name": "Cape Verde",
+            "independenceYear": 1975
+        },
+        {
+            "id": 33,
+            "name": "Central African Republic",
+            "independenceYear": 1960
+        },
+        {
+            "id": 34,
+            "name": "Chad",
+            "independenceYear": 1960
+        }
+    ]
+}

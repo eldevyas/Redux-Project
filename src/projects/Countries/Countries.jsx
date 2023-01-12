@@ -1,8 +1,12 @@
+import Interface from "./interface/Interface";
+import store from "./config/store";
+import { Provider } from "react-redux";
+
 const Countries = () => {
     return (
-        <div>
-            <h1>Countries</h1>
-        </div>
+        <Provider store={store}>
+            <Interface />
+        </Provider>
     )
 }
 

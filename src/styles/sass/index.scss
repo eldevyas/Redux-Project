@@ -1,0 +1,241 @@
+    /* global tag */
+    
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    /* body */
+    
+    body {
+        font-family: "Outfit", sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        background-color: #e8e8e8;
+        color: #333;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        .Counter {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            height: 100%;
+            gap: 2rem;
+            margin-bottom: 2.5rem;
+            h1 {
+                font-size: 1.5rem;
+                font-weight: 700;
+                margin-bottom: 0rem;
+            }
+            h4 {
+                font-size: 1rem;
+                font-weight: 700;
+                margin-bottom: 0rem;
+                color: rgba(0, 0, 0, 0.5);
+                span {
+                    color: rgba(0, 0, 0, 0.5);
+                }
+            }
+            /* badge span */
+            span {
+                // font-size: 1.25rem;
+                font-weight: 700;
+                padding: 0.5rem 1rem;
+                border-radius: 0.25rem;
+                background-color: #fff;
+                color: #1a1a1a;
+                margin-left: 1rem;
+            }
+            /* buttons container */
+            .Buttons {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 2.5rem;
+                flex-wrap: wrap;
+                button {
+                    font-size: 16px;
+                    padding: 1em 3.3em;
+                    transform: perspective(200px) rotateX(15deg);
+                    color: white;
+                    font-weight: 900;
+                    border: none;
+                    border-radius: 5px;
+                    font-family: "Outfit", sans-serif;
+                    text-transform: uppercase;
+                    background: linear-gradient( 0deg, rgba(63, 94, 251, 1) 0%, rgba(70, 135, 252, 1) 100%);
+                    box-shadow: rgba(63, 94, 251, 0.2) 0px 40px 29px 0px;
+                    will-change: transform;
+                    transition: all 0.3s;
+                    border-bottom: 2px solid rgba(70, 135, 252, 1);
+                    width: 200px;
+                    &:hover {
+                        transform: perspective(180px) rotateX(30deg) translateY(2px);
+                    }
+                    &:active {
+                        transform: perspective(170px) rotateX(36deg) translateY(5px);
+                    }
+                    /* change color of last button */
+                    &:last-child {
+                        background: linear-gradient(0deg, #ff416c 0%, #ff4b2b 100%);
+                        box-shadow: rgba(227, 93, 91, 0.2) 0px 40px 29px 0px;
+                        border-bottom: 2px solid rgba(227, 93, 91, 0.5);
+                    }
+                    /* first button to green */
+                    &:first-child {
+                        background: linear-gradient(0deg, #0cebeb 0%, #20e3b2 50%, #29ffc6 100%);
+                        box-shadow: rgba(41, 255, 198, 0.2) 0px 40px 29px 0px;
+                        border-bottom: 2px solid rgba(41, 255, 198, 0.5);
+                    }
+                    /* second button to white */
+                    &:nth-child(2) {
+                        background: linear-gradient( 0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                        box-shadow: rgba(0, 0, 0, 0.1) 0px 40px 29px 0px;
+                        border-bottom: 2px solid rgba(255, 255, 255, 1);
+                        color: #333;
+                    }
+                }
+            }
+        }
+        .Countries {
+            position: relative;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 2rem;
+            h1 {
+                font-size: 1.5rem;
+                font-weight: 700;
+                margin-bottom: 1rem;
+            }
+            .Menu {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                gap: 1.5rem;
+                flex-wrap: wrap;
+                width: 100%;
+                .MenuButton {
+                    font-size: 0.85rem;
+                    padding: 1em 3.3em;
+                    transform: perspective(200px) rotateX(15deg);
+                    font-weight: 900;
+                    border: none;
+                    border-radius: 5px;
+                    font-family: "Outfit", sans-serif;
+                    text-transform: uppercase;
+                    background: linear-gradient( 0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 40px 29px 0px;
+                    border-bottom: 2px solid rgba(255, 255, 255, 1);
+                    color: #333;
+                    will-change: transform;
+                    transition: all 0.3s;
+                    width: 200px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    text-align: center;
+                    &:hover {
+                        transform: perspective(180px) rotateX(30deg) translateY(2px);
+                    }
+                    &:active {
+                        transform: perspective(170px) rotateX(36deg) translateY(5px);
+                    }
+                }
+                .MenuButton.active {
+                    background: linear-gradient(0deg, #0cebeb 0%, #20e3b2 50%, #29ffc6 100%);
+                    box-shadow: rgba(41, 255, 198, 0.2) 0px 40px 29px 0px;
+                    border-bottom: 2px solid rgba(41, 255, 198, 0.5);
+                    color: white;
+                }
+            }
+            .Pages {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                transform: perspective(1000px) rotateX(15deg);
+                border-radius: 5px;
+                will-change: transform;
+                transition: all 0.3s;
+                overflow: hidden;
+                background: white;
+                &:hover {
+                    transform: perspective(1200px) rotateX(30deg) translateY(2px);
+                    border-radius: 10px;
+                }
+                .P1,
+                .P2,
+                .P3,
+                .P4 {
+                    width: 100%;
+                    min-height: 250px;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 5px;
+                }
+                .P3 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    padding: 2rem;
+                    .CountriesCards {
+                        // Grid Display of cards
+                        display: grid;
+                        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                        grid-gap: 2rem;
+                        width: 100%;
+                        .CountryCard {
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            justify-content: center;
+                            gap: 1rem;
+                            border-radius: 5px;
+                            background: rgba(0, 0, 0, 0.025);
+                            padding: 1rem;
+                            .Image {
+                                width: 100%;
+                                height: auto;
+                                aspect-ratio: 2/1;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    border-radius: 5px;
+                                }
+                            }
+                            .Name {
+                                font-size: 1.5rem;
+                                font-weight: 700;
+                            }
+                            .Info {
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                justify-content: flex-start;
+                                gap: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

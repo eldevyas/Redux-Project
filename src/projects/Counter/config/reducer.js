@@ -1,4 +1,4 @@
-const initialState = { count: 0, city: "Rabat" };
+const initialState = { count: 0 };
 const reducer = (state = initialState, action) => {
     switch (action.type) {
         case 'INCREMENT':
@@ -12,14 +12,13 @@ const reducer = (state = initialState, action) => {
         case 'DECREMENT':
             // log to console
             console.log("Decrementing...");
-
             return {
                 ...state,
                 count: state.count > 0 ? state.count - 1 : state.count
             }
         case 'RESET':
-            // log to console
             console.log("Resetting...");
+            // log to console
             return {
                 ...state,
                 count: 0

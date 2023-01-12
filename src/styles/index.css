@@ -1,0 +1,240 @@
+/* global tag */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* body */
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #e8e8e8;
+  color: #333;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+body .Counter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+  /* badge span */
+  /* buttons container */
+}
+body .Counter h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0rem;
+}
+body .Counter h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+body .Counter h4 span {
+  color: rgba(0, 0, 0, 0.5);
+}
+body .Counter span {
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  color: #1a1a1a;
+  margin-left: 1rem;
+}
+body .Counter .Buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+body .Counter .Buttons button {
+  font-size: 16px;
+  padding: 1em 3.3em;
+  transform: perspective(200px) rotateX(15deg);
+  color: white;
+  font-weight: 900;
+  border: none;
+  border-radius: 5px;
+  font-family: "Outfit", sans-serif;
+  text-transform: uppercase;
+  background: linear-gradient(0deg, rgb(63, 94, 251) 0%, rgb(70, 135, 252) 100%);
+  box-shadow: rgba(63, 94, 251, 0.2) 0px 40px 29px 0px;
+  will-change: transform;
+  transition: all 0.3s;
+  border-bottom: 2px solid rgb(70, 135, 252);
+  width: 200px;
+  /* change color of last button */
+  /* first button to green */
+  /* second button to white */
+}
+body .Counter .Buttons button:hover {
+  transform: perspective(180px) rotateX(30deg) translateY(2px);
+}
+body .Counter .Buttons button:active {
+  transform: perspective(170px) rotateX(36deg) translateY(5px);
+}
+body .Counter .Buttons button:last-child {
+  background: linear-gradient(0deg, #ff416c 0%, #ff4b2b 100%);
+  box-shadow: rgba(227, 93, 91, 0.2) 0px 40px 29px 0px;
+  border-bottom: 2px solid rgba(227, 93, 91, 0.5);
+}
+body .Counter .Buttons button:first-child {
+  background: linear-gradient(0deg, #0cebeb 0%, #20e3b2 50%, #29ffc6 100%);
+  box-shadow: rgba(41, 255, 198, 0.2) 0px 40px 29px 0px;
+  border-bottom: 2px solid rgba(41, 255, 198, 0.5);
+}
+body .Counter .Buttons button:nth-child(2) {
+  background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 40px 29px 0px;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  color: #333;
+}
+body .Countries {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+body .Countries h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+body .Countries .Menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+body .Countries .Menu .MenuButton {
+  font-size: 0.85rem;
+  padding: 1em 3.3em;
+  transform: perspective(200px) rotateX(15deg);
+  font-weight: 900;
+  border: none;
+  border-radius: 5px;
+  font-family: "Outfit", sans-serif;
+  text-transform: uppercase;
+  background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 40px 29px 0px;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  color: #333;
+  will-change: transform;
+  transition: all 0.3s;
+  width: 200px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+body .Countries .Menu .MenuButton:hover {
+  transform: perspective(180px) rotateX(30deg) translateY(2px);
+}
+body .Countries .Menu .MenuButton:active {
+  transform: perspective(170px) rotateX(36deg) translateY(5px);
+}
+body .Countries .Menu .MenuButton.active {
+  background: linear-gradient(0deg, #0cebeb 0%, #20e3b2 50%, #29ffc6 100%);
+  box-shadow: rgba(41, 255, 198, 0.2) 0px 40px 29px 0px;
+  border-bottom: 2px solid rgba(41, 255, 198, 0.5);
+  color: white;
+}
+body .Countries .Pages {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  transform: perspective(1000px) rotateX(15deg);
+  border-radius: 5px;
+  will-change: transform;
+  transition: all 0.3s;
+  overflow: hidden;
+  background: white;
+}
+body .Countries .Pages:hover {
+  transform: perspective(1200px) rotateX(30deg) translateY(2px);
+  border-radius: 10px;
+}
+body .Countries .Pages .P1,
+body .Countries .Pages .P2,
+body .Countries .Pages .P3,
+body .Countries .Pages .P4 {
+  width: 100%;
+  min-height: 250px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+body .Countries .Pages .P3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 2rem;
+}
+body .Countries .Pages .P3 .CountriesCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 2rem;
+  width: 100%;
+}
+body .Countries .Pages .P3 .CountriesCards .CountryCard {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.025);
+  padding: 1rem;
+}
+body .Countries .Pages .P3 .CountriesCards .CountryCard .Image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2/1;
+}
+body .Countries .Pages .P3 .CountriesCards .CountryCard .Image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+body .Countries .Pages .P3 .CountriesCards .CountryCard .Name {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+body .Countries .Pages .P3 .CountriesCards .CountryCard .Info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+/*# sourceMappingURL=index.css.map */
